@@ -1,0 +1,528 @@
+[gd_scene load_steps=4 format=3 uid="uid://cjgb4c3ay2kx1"]
+
+[ext_resource type="Script" path="res://OneSampleTitle.gd" id="1_jakft"]
+[ext_resource type="Script" path="res://AchievedCounts.gd" id="3_2t5hf"]
+[ext_resource type="Texture2D" uid="uid://ca31fvmb5vlf" path="res://Stats MCQ Answer Streaks Distribution (1).png" id="3_3e07p"]
+
+[node name="MainScene" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+follow_viewport_enabled = true
+
+[node name="OneSampleTitle" type="Label" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -554.0
+offset_top = -302.0
+offset_right = 87.0
+offset_bottom = -234.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 48
+text = "30 RANDOMIZED A-E MCQ's"
+script = ExtResource("1_jakft")
+
+[node name="Q1" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 80.0
+offset_right = 181.0
+offset_bottom = 125.0
+theme_override_font_sizes/font_size = 32
+text = "1). A"
+horizontal_alignment = 2
+
+[node name="Q2" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 130.0
+offset_right = 181.0
+offset_bottom = 175.0
+theme_override_font_sizes/font_size = 32
+text = "2). A"
+horizontal_alignment = 2
+
+[node name="Q3" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 94.0
+offset_top = 180.0
+offset_right = 181.0
+offset_bottom = 225.0
+theme_override_font_sizes/font_size = 32
+text = "3). A"
+horizontal_alignment = 2
+
+[node name="Q4" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 230.0
+offset_right = 181.0
+offset_bottom = 275.0
+theme_override_font_sizes/font_size = 32
+text = "4). A"
+horizontal_alignment = 2
+
+[node name="Q5" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 97.0
+offset_top = 280.0
+offset_right = 181.0
+offset_bottom = 325.0
+theme_override_font_sizes/font_size = 32
+text = "5). A"
+horizontal_alignment = 2
+
+[node name="Q6" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 330.0
+offset_right = 181.0
+offset_bottom = 375.0
+theme_override_font_sizes/font_size = 32
+text = "6). A"
+horizontal_alignment = 2
+
+[node name="Q7" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 97.0
+offset_top = 380.0
+offset_right = 181.0
+offset_bottom = 425.0
+theme_override_font_sizes/font_size = 32
+text = "7). A"
+horizontal_alignment = 2
+
+[node name="Q8" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 430.0
+offset_right = 181.0
+offset_bottom = 475.0
+theme_override_font_sizes/font_size = 32
+text = "8). A"
+horizontal_alignment = 2
+
+[node name="Q9" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 97.0
+offset_top = 480.0
+offset_right = 181.0
+offset_bottom = 525.0
+theme_override_font_sizes/font_size = 32
+text = "9). A"
+horizontal_alignment = 2
+
+[node name="Q10" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 97.0
+offset_top = 530.0
+offset_right = 181.0
+offset_bottom = 575.0
+theme_override_font_sizes/font_size = 32
+text = "10). A"
+horizontal_alignment = 2
+
+[node name="Q11" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 251.0
+offset_top = 80.0
+offset_right = 336.0
+offset_bottom = 125.0
+theme_override_font_sizes/font_size = 32
+text = "11). A"
+horizontal_alignment = 2
+
+[node name="Q12" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 250.0
+offset_top = 130.0
+offset_right = 336.0
+offset_bottom = 175.0
+theme_override_font_sizes/font_size = 32
+text = "12). A"
+horizontal_alignment = 2
+
+[node name="Q13" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 249.0
+offset_top = 180.0
+offset_right = 336.0
+offset_bottom = 225.0
+theme_override_font_sizes/font_size = 32
+text = "13). A"
+horizontal_alignment = 2
+
+[node name="Q14" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 250.0
+offset_top = 230.0
+offset_right = 336.0
+offset_bottom = 275.0
+theme_override_font_sizes/font_size = 32
+text = "14). A"
+horizontal_alignment = 2
+
+[node name="Q15" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 252.0
+offset_top = 280.0
+offset_right = 336.0
+offset_bottom = 325.0
+theme_override_font_sizes/font_size = 32
+text = "15). A"
+horizontal_alignment = 2
+
+[node name="Q16" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 251.0
+offset_top = 330.0
+offset_right = 336.0
+offset_bottom = 375.0
+theme_override_font_sizes/font_size = 32
+text = "16). A"
+horizontal_alignment = 2
+
+[node name="Q17" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 252.0
+offset_top = 380.0
+offset_right = 336.0
+offset_bottom = 425.0
+theme_override_font_sizes/font_size = 32
+text = "17). A"
+horizontal_alignment = 2
+
+[node name="Q18" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 251.0
+offset_top = 430.0
+offset_right = 336.0
+offset_bottom = 475.0
+theme_override_font_sizes/font_size = 32
+text = "18). A"
+horizontal_alignment = 2
+
+[node name="Q19" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 252.0
+offset_top = 480.0
+offset_right = 336.0
+offset_bottom = 525.0
+theme_override_font_sizes/font_size = 32
+text = "19). A"
+horizontal_alignment = 2
+
+[node name="Q20" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 252.0
+offset_top = 530.0
+offset_right = 336.0
+offset_bottom = 575.0
+theme_override_font_sizes/font_size = 32
+text = "20). A"
+horizontal_alignment = 2
+
+[node name="Q21" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 80.0
+offset_right = 485.0
+offset_bottom = 125.0
+theme_override_font_sizes/font_size = 32
+text = "21). A"
+horizontal_alignment = 2
+
+[node name="Q22" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 399.0
+offset_top = 130.0
+offset_right = 485.0
+offset_bottom = 175.0
+theme_override_font_sizes/font_size = 32
+text = "22). A"
+horizontal_alignment = 2
+
+[node name="Q23" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 398.0
+offset_top = 180.0
+offset_right = 485.0
+offset_bottom = 225.0
+theme_override_font_sizes/font_size = 32
+text = "23). A"
+horizontal_alignment = 2
+
+[node name="Q24" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 399.0
+offset_top = 230.0
+offset_right = 485.0
+offset_bottom = 275.0
+theme_override_font_sizes/font_size = 32
+text = "24). A"
+horizontal_alignment = 2
+
+[node name="Q25" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 401.0
+offset_top = 280.0
+offset_right = 485.0
+offset_bottom = 325.0
+theme_override_font_sizes/font_size = 32
+text = "25). A"
+horizontal_alignment = 2
+
+[node name="Q26" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 330.0
+offset_right = 485.0
+offset_bottom = 375.0
+theme_override_font_sizes/font_size = 32
+text = "26). A"
+horizontal_alignment = 2
+
+[node name="Q27" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 401.0
+offset_top = 380.0
+offset_right = 485.0
+offset_bottom = 425.0
+theme_override_font_sizes/font_size = 32
+text = "27). A"
+horizontal_alignment = 2
+
+[node name="Q28" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 430.0
+offset_right = 485.0
+offset_bottom = 475.0
+theme_override_font_sizes/font_size = 32
+text = "28). A"
+horizontal_alignment = 2
+
+[node name="Q29" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 401.0
+offset_top = 480.0
+offset_right = 485.0
+offset_bottom = 525.0
+theme_override_font_sizes/font_size = 32
+text = "29). A"
+horizontal_alignment = 2
+
+[node name="Q30" type="Label" parent="CanvasLayer/OneSampleTitle"]
+layout_mode = 0
+offset_left = 401.0
+offset_top = 530.0
+offset_right = 485.0
+offset_bottom = 575.0
+theme_override_font_sizes/font_size = 32
+text = "30). A"
+horizontal_alignment = 2
+
+[node name="AchievedCounts" type="Label" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 277.0
+offset_top = -306.0
+offset_right = 918.0
+offset_bottom = -238.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 48
+script = ExtResource("3_2t5hf")
+
+[node name="streak1" type="Label" parent="CanvasLayer/AchievedCounts"]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 87.0
+offset_right = 252.0
+offset_bottom = 132.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+
+[node name="streak2" type="Label" parent="CanvasLayer/AchievedCounts"]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 117.0
+offset_right = 253.0
+offset_bottom = 162.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+
+[node name="streak3" type="Label" parent="CanvasLayer/AchievedCounts"]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 148.0
+offset_right = 253.0
+offset_bottom = 193.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+
+[node name="streak4" type="Label" parent="CanvasLayer/AchievedCounts"]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 179.0
+offset_right = 253.0
+offset_bottom = 224.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+
+[node name="streak5" type="Label" parent="CanvasLayer/AchievedCounts"]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 209.0
+offset_right = 253.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+
+[node name="streak6" type="Label" parent="CanvasLayer/AchievedCounts"]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 239.0
+offset_right = 253.0
+offset_bottom = 284.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+
+[node name="streak7" type="Label" parent="CanvasLayer/AchievedCounts"]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 270.0
+offset_right = 253.0
+offset_bottom = 315.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+
+[node name="streak8+" type="Label" parent="CanvasLayer/AchievedCounts"]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 300.0
+offset_right = 253.0
+offset_bottom = 345.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+
+[node name="sampleSizeDefined" type="Label" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 107.0
+offset_top = 27.0
+offset_right = 541.0
+offset_bottom = 62.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "n = count of total simulated streaks"
+
+[node name="sampleSizeText" type="Label" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 107.0
+offset_top = 57.0
+offset_right = 541.0
+offset_bottom = 92.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "n = 0"
+horizontal_alignment = 1
+
+[node name="newSampleButton" type="Button" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 160.0
+offset_top = 93.0
+offset_right = 500.0
+offset_bottom = 145.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "NEW RANDOM SAMPLE"
+
+[node name="twentySampleButton" type="Button" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 158.0
+offset_top = 154.0
+offset_right = 498.0
+offset_bottom = 206.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "20 NEW SAMPLES"
+
+[node name="customSampleButton" type="Button" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 416.0
+offset_top = 220.0
+offset_right = 544.0
+offset_bottom = 312.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Take
+samples"
+
+[node name="TextEdit" type="TextEdit" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 96.0
+offset_top = 236.0
+offset_right = 412.0
+offset_bottom = 298.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+placeholder_text = "ENTER # SAMPLES"
+
+[node name="CenteringTableImage" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StatsMcqAnswerStreaksDistribution" type="Sprite2D" parent="CanvasLayer/CenteringTableImage"]
+position = Vector2(364, -97)
+scale = Vector2(0.541667, 0.541667)
+texture = ExtResource("3_3e07p")
+
+[connection signal="pressed" from="CanvasLayer/newSampleButton" to="CanvasLayer/OneSampleTitle" method="_on_new_sample_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/twentySampleButton" to="CanvasLayer/OneSampleTitle" method="_on_twenty_sample_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/customSampleButton" to="CanvasLayer/OneSampleTitle" method="_on_custom_sample_button_pressed"]

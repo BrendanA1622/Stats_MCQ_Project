@@ -5,6 +5,8 @@ extends Label
 
 @onready var achieved_counts = $"../AchievedCounts"
 @onready var text_edit = $"../TextEdit"
+@onready var cont_sample_timer = $"../CheckBox/ContSampleTimer"
+@onready var line_edit = $"../CheckBox/LineEdit"
 
 @onready var answerLabelArray = [$Q1,$Q2,$Q3,$Q4,$Q5,$Q6,$Q7,$Q8,$Q9,$Q10, 
 								$Q11,$Q12,$Q13,$Q14,$Q15,$Q16,$Q17,$Q18,$Q19,$Q20,
@@ -12,15 +14,7 @@ extends Label
 
 var runStreaksArray = []
 
-var numRun0: int = 0
-var numRun1: int = 0
-var numRun2: int = 0
-var numRun3: int = 0
-var numRun4: int = 0
-var numRun5: int = 0
-var numRun6: int = 0
-var numRun7: int = 0
-var numRun8OrMore: int = 0
+var continuouslySample: bool = false
 
 func _ready():
 	randomizeSample()
@@ -35,10 +29,24 @@ func _on_twenty_sample_button_pressed():
 		j += 1
 
 func _on_custom_sample_button_pressed():
+	randomSamples()
+
+func _on_cont_sample_timer_timeout():
+	cont_sample_timer.stop()
+	cont_sample_timer.wait_time = float(line_edit.text)
+	randomSamples()
+
+func _on_check_box_toggled(toggled_on):
+	continuouslySample = toggled_on
+
+func randomSamples():
 	var k = 0
 	while(k < int(text_edit.text)):
 		randomizeSample()
 		k += 1
+	if continuouslySample == true:
+		cont_sample_timer.start()
+	
 
 func randomizeSample():
 	var randomLetter: String
@@ -124,5 +132,11 @@ func randomizeSample():
 	runStreaksArray.erase(1622)
 	
 	achieved_counts.updateStreakCount(runStreaksArray.count(1),runStreaksArray.count(2),runStreaksArray.count(3),runStreaksArray.count(4),runStreaksArray.count(5),runStreaksArray.count(6),runStreaksArray.count(7),runStreaksArray.count(8)+runStreaksArray.count(9)+runStreaksArray.count(10)+runStreaksArray.count(11)+runStreaksArray.count(12)+runStreaksArray.count(13)+runStreaksArray.count(14)+runStreaksArray.count(15))
+
+
+
+
+
+
 
 

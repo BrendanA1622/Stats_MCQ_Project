@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cjgb4c3ay2kx1"]
+[gd_scene load_steps=5 format=3 uid="uid://cjgb4c3ay2kx1"]
 
 [ext_resource type="Script" path="res://OneSampleTitle.gd" id="1_jakft"]
 [ext_resource type="Script" path="res://AchievedCounts.gd" id="3_2t5hf"]
 [ext_resource type="Texture2D" uid="uid://ca31fvmb5vlf" path="res://Stats MCQ Answer Streaks Distribution (1).png" id="3_3e07p"]
+[ext_resource type="Texture2D" uid="uid://dfp3m72nbke1v" path="res://Chi-squaredImage (1).png" id="4_xe4vp"]
 
 [node name="MainScene" type="Node2D"]
 
@@ -15,10 +16,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -554.0
-offset_top = -302.0
-offset_right = 87.0
-offset_bottom = -234.0
+offset_left = -561.0
+offset_top = -296.0
+offset_right = 73.0
+offset_bottom = -229.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 48
@@ -331,10 +332,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 277.0
-offset_top = -306.0
-offset_right = 918.0
-offset_bottom = -238.0
+offset_left = 297.0
+offset_top = -286.0
+offset_right = 298.0
+offset_bottom = -219.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 48
@@ -418,10 +419,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 107.0
-offset_top = 27.0
-offset_right = 541.0
-offset_bottom = 62.0
+offset_left = 128.0
+offset_top = 45.0
+offset_right = 559.0
+offset_bottom = 80.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 25
@@ -433,10 +434,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 107.0
-offset_top = 57.0
-offset_right = 541.0
-offset_bottom = 92.0
+offset_left = 314.0
+offset_top = 72.0
+offset_right = 372.0
+offset_bottom = 107.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 25
@@ -449,10 +450,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 160.0
-offset_top = 93.0
-offset_right = 500.0
-offset_bottom = 145.0
+offset_left = 202.0
+offset_top = 107.0
+offset_right = 493.0
+offset_bottom = 150.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 25
@@ -464,10 +465,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 158.0
-offset_top = 154.0
-offset_right = 498.0
-offset_bottom = 206.0
+offset_left = 243.0
+offset_top = 157.0
+offset_right = 462.0
+offset_bottom = 200.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 25
@@ -479,10 +480,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 416.0
-offset_top = 220.0
-offset_right = 544.0
-offset_bottom = 312.0
+offset_left = 292.0
+offset_top = 211.0
+offset_right = 420.0
+offset_bottom = 303.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 30
@@ -495,10 +496,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 96.0
-offset_top = 236.0
-offset_right = 412.0
-offset_bottom = 298.0
+offset_left = -41.0
+offset_top = 228.0
+offset_right = 279.0
+offset_bottom = 288.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 35
@@ -511,10 +512,6 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -523,6 +520,58 @@ position = Vector2(364, -97)
 scale = Vector2(0.541667, 0.541667)
 texture = ExtResource("3_3e07p")
 
+[node name="CheckBox" type="CheckBox" parent="CanvasLayer"]
+offset_left = 1004.0
+offset_top = 547.0
+offset_right = 1144.0
+offset_bottom = 583.0
+theme_override_font_sizes/font_size = 20
+text = "Continuous"
+icon_alignment = 1
+expand_icon = true
+
+[node name="ContSampleTimer" type="Timer" parent="CanvasLayer/CheckBox"]
+wait_time = 0.3
+
+[node name="LineEdit" type="LineEdit" parent="CanvasLayer/CheckBox"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 34.0
+offset_right = 141.0
+offset_bottom = 65.0
+placeholder_text = "time delay (0.3)"
+
+[node name="ChiSquaredImage" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1.0
+offset_top = -21.0
+offset_right = 1.0
+offset_bottom = -21.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Chi-squaredImage" type="Sprite2D" parent="CanvasLayer/ChiSquaredImage"]
+position = Vector2(105, 237)
+scale = Vector2(0.358333, 0.358333)
+texture = ExtResource("4_xe4vp")
+
+[node name="chi_value" type="Label" parent="CanvasLayer/ChiSquaredImage"]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 121.0
+offset_right = 164.0
+offset_bottom = 170.0
+theme_override_font_sizes/font_size = 35
+text = "0"
+clip_text = true
+
 [connection signal="pressed" from="CanvasLayer/newSampleButton" to="CanvasLayer/OneSampleTitle" method="_on_new_sample_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/twentySampleButton" to="CanvasLayer/OneSampleTitle" method="_on_twenty_sample_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/customSampleButton" to="CanvasLayer/OneSampleTitle" method="_on_custom_sample_button_pressed"]
+[connection signal="toggled" from="CanvasLayer/CheckBox" to="CanvasLayer/OneSampleTitle" method="_on_check_box_toggled"]
+[connection signal="timeout" from="CanvasLayer/CheckBox/ContSampleTimer" to="CanvasLayer/OneSampleTitle" method="_on_cont_sample_timer_timeout"]

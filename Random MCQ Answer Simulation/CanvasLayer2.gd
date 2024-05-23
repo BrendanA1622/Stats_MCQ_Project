@@ -76,9 +76,44 @@ var allAnswerArrays: Array = [mcAnswerArray1,mcAnswerArray2,mcAnswerArray3,mcAns
 								mcAnswerArray46,mcAnswerArray47,mcAnswerArray48,mcAnswerArray49,mcAnswerArray50,
 								mcAnswerArray51,mcAnswerArray52]
 
+var runStreaksArray: Array = [0,0,0,0]
+
+@onready var streak_1 = $AchievedCounts/streak1
+@onready var streak_2 = $AchievedCounts/streak2
+@onready var streak_3 = $AchievedCounts/streak3
+@onready var streak_4_ = $"AchievedCounts/streak4+"
+@onready var sample_size_text = $sampleSizeText
+@onready var chi_value = $ChiSquaredImage/chi_value
+
+var streakSampleSize: int
+
+var exp1: float = 0.8066
+var exp2: float = 0.156
+var exp3: float = 0.03
+var exp4_: float = 0.0072
+
 func _ready():
 	for particAnswerArray in allAnswerArrays:
-		
+		var lastLetter: String = "no_previous"
+		var run: int = 1622
 		
 		for particLetterAnswer in particAnswerArray:
-			print(particLetterAnswer)
+			if particLetterAnswer == lastLetter:
+				run += 1
+			else:
+				if run <= 4:
+					runStreaksArray[run - 1] += 1
+				run = 1
+			lastLetter = particLetterAnswer
+	
+	streak_1.text = str(runStreaksArray[0])
+	streak_2.text = str(runStreaksArray[1])
+	streak_3.text = str(runStreaksArray[2])
+	streak_4_.text = str(runStreaksArray[3])
+	streakSampleSize = runStreaksArray[0]+runStreaksArray[1]+runStreaksArray[2]+runStreaksArray[3]
+	sample_size_text.text = "n = " + str(streakSampleSize)
+	exp1 = exp1 * streakSampleSize
+	exp2 = exp2 * streakSampleSize
+	exp3 = exp3 * streakSampleSize
+	exp4_ = exp4_ * streakSampleSize
+	chi_value.text = str(pow(runStreaksArray[0]-exp1,2.0) / exp1 + pow(runStreaksArray[1]-exp2,2.0) / exp2 + pow(runStreaksArray[2]-exp3,2.0) / exp3 + pow(runStreaksArray[3]-exp4_,2.0) / exp4_)

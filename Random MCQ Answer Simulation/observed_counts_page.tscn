@@ -1,0 +1,195 @@
+[gd_scene load_steps=5 format=3 uid="uid://c1kj1316tdl2n"]
+
+[ext_resource type="Script" path="res://CanvasLayer2.gd" id="1_3s1rs"]
+[ext_resource type="Script" path="res://observedAPAnswers.gd" id="1_uujf0"]
+[ext_resource type="Texture2D" uid="uid://ca31fvmb5vlf" path="res://Stats MCQ Answer Streaks Distribution (1).png" id="2_ham74"]
+[ext_resource type="Texture2D" uid="uid://dfp3m72nbke1v" path="res://Chi-squaredImage (1).png" id="3_8k425"]
+
+[node name="observedCountsPage" type="Node2D"]
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+follow_viewport_enabled = true
+script = ExtResource("1_3s1rs")
+
+[node name="AchievedCounts" type="Label" parent="CanvasLayer2"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 142.0
+offset_top = -222.0
+offset_right = 143.0
+offset_bottom = -155.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 48
+
+[node name="streak1" type="Label" parent="CanvasLayer2/AchievedCounts"]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 87.0
+offset_right = 252.0
+offset_bottom = 132.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+
+[node name="streak2" type="Label" parent="CanvasLayer2/AchievedCounts"]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 117.0
+offset_right = 253.0
+offset_bottom = 162.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+
+[node name="streak3" type="Label" parent="CanvasLayer2/AchievedCounts"]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 148.0
+offset_right = 253.0
+offset_bottom = 193.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+
+[node name="streak4" type="Label" parent="CanvasLayer2/AchievedCounts"]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 179.0
+offset_right = 253.0
+offset_bottom = 224.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+
+[node name="streak5" type="Label" parent="CanvasLayer2/AchievedCounts"]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 209.0
+offset_right = 253.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+
+[node name="streak6" type="Label" parent="CanvasLayer2/AchievedCounts"]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 239.0
+offset_right = 253.0
+offset_bottom = 284.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+
+[node name="streak7" type="Label" parent="CanvasLayer2/AchievedCounts"]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 270.0
+offset_right = 253.0
+offset_bottom = 315.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+
+[node name="streak8+" type="Label" parent="CanvasLayer2/AchievedCounts"]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 300.0
+offset_right = 253.0
+offset_bottom = 345.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+
+[node name="sampleSizeDefined" type="Label" parent="CanvasLayer2"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -27.0
+offset_top = 109.0
+offset_right = 404.0
+offset_bottom = 144.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "n = count of total simulated streaks"
+
+[node name="sampleSizeText" type="Label" parent="CanvasLayer2"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 159.0
+offset_top = 136.0
+offset_right = 217.0
+offset_bottom = 171.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "n = 0"
+horizontal_alignment = 1
+
+[node name="observedAPAnswers" type="Button" parent="CanvasLayer2"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = 280.0
+offset_right = -304.0
+offset_bottom = 323.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "Simulate MC Answers"
+script = ExtResource("1_uujf0")
+
+[node name="CenteringTableImage" type="Control" parent="CanvasLayer2"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -155.0
+offset_top = 64.0
+offset_right = -155.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StatsMcqAnswerStreaksDistribution" type="Sprite2D" parent="CanvasLayer2/CenteringTableImage"]
+position = Vector2(364, -97)
+scale = Vector2(0.541667, 0.541667)
+texture = ExtResource("2_ham74")
+
+[node name="ChiSquaredImage" type="Control" parent="CanvasLayer2"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -326.0
+offset_top = -170.0
+offset_right = -326.0
+offset_bottom = -170.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Chi-squaredImage" type="Sprite2D" parent="CanvasLayer2/ChiSquaredImage"]
+position = Vector2(105, 237)
+scale = Vector2(0.358333, 0.358333)
+texture = ExtResource("3_8k425")
+
+[node name="chi_value" type="Label" parent="CanvasLayer2/ChiSquaredImage"]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 121.0
+offset_right = 164.0
+offset_bottom = 170.0
+theme_override_font_sizes/font_size = 35
+text = "0"
+clip_text = true
+
+[connection signal="pressed" from="CanvasLayer2/observedAPAnswers" to="CanvasLayer2/observedAPAnswers" method="_on_pressed"]

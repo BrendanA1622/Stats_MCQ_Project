@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://CanvasLayer2.gd" id="1_3s1rs"]
 [ext_resource type="Script" path="res://observedAPAnswers.gd" id="1_uujf0"]
 [ext_resource type="Texture2D" uid="uid://ca31fvmb5vlf" path="res://Stats MCQ Answer Streaks Distribution (1).png" id="2_ham74"]
-[ext_resource type="Texture2D" uid="uid://dfp3m72nbke1v" path="res://Chi-squaredImage (1).png" id="3_8k425"]
 [ext_resource type="Shader" path="res://observed_counts_page.gdshader" id="3_to3ap"]
+[ext_resource type="Texture2D" uid="uid://cf6qhgk1qplck" path="res://Chi-squaredImage (2).png" id="5_1tnnt"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_2g2ij"]
 shader = ExtResource("3_to3ap")
@@ -149,7 +149,7 @@ grow_vertical = 2
 [node name="Chi-squaredImage" type="Sprite2D" parent="CanvasLayer2/ChiSquaredImage"]
 position = Vector2(105, 237)
 scale = Vector2(0.358333, 0.358333)
-texture = ExtResource("3_8k425")
+texture = ExtResource("5_1tnnt")
 
 [node name="chi_value" type="Label" parent="CanvasLayer2/ChiSquaredImage"]
 layout_mode = 0
